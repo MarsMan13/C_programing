@@ -1,0 +1,87 @@
+set nocompatible				" be iMproved
+filetype off					" required!
+set rtp+=~/.vim/bundle/vundle/	" LET'S VUNDLE!
+call vundle#rc()
+Bundle 'L9'
+Bundle 'https://github.com/Lokaltog/vim-powerline.git'
+Bundle 'https://github.com/tpope/vim-fugitive'
+Bundle 'AutoComplPop'
+Bundle 'clang-complete'
+Bundle 'gmarik/vundle'
+Bundle 'node.js'
+Bundle 'css3-syntax-plus'
+Bundle 'google_prettify.vim'
+Bundle 'jslint.vim'
+Bundle 'vim-coffee-script'
+Bundle 'jade.vim'
+Bundle 'FuzzyFinder'
+"Bundle 'https://github.com/Rip-Rip/clang_complete.git'
+
+"PowerLine>-----------------------
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+"---------------------------------
+"ClangComplete"-----------------
+"let g:clang_library_path = '/usr/lib/libclang.so.1'
+let g:clang_snippets = 1
+let g:clang_snippets_engine = 'clang_complete'
+let g:clang_auto_select = 1
+let g:clang_close_preview = 1
+let g:clang_snippets = 1
+let g:clang_trailing_placeholder = 1
+"---------------------------------
+
+set shiftwidth=4
+set ts=4
+set shiftwidth=4
+set ruler
+set foldmethod=marker
+
+set tabstop=4
+"set expandtab
+set smarttab
+set softtabstop=4
+
+set laststatus=2
+set cindent
+set smartindent
+set autoindent
+set hi=1000
+set title
+set titleold=Howoo.
+
+"set mouse=a
+
+set hls
+set scs
+
+colorscheme Tomorrow-Night
+syntax on
+
+set nobackup
+set tags=tags;/
+set ignorecase
+set smartcase
+
+set showmatch
+set ai
+set nu
+
+filetype plugin indent on     " required!"
+
+map<F2> :w <CR> :! gcc -g -lm -Wall % && ./a.out<CR>
+map<F3> :w <CR> :! g++ -g -lm -Wall -std=c++0x % && ./a.out<CR>
+map<F8> :w <CR> :! make<CR>
+map<F2> gT
+map<F3> gt
+map<F4> :w <CR> :e <CR>
+map<F6> :w <CR> :! gcc -g -lm -Wall -O3 % && time ./a.out <CR>
+map<F7> :w <CR> :! make && ./testlib<CR>
+map<F8> :w <CR> :! g++ -g -lm -Wall -O3 -std=c++0x -static % && time ./a.out <CR>
+map<F9> :w <CR> :! python % <CR>
+map<F10> :w <CR> :! texliveonfly % <CR>
+map find :FufFile <CR>
+map tn :tabnew \| FufFile <CR>
+map tq :q <CR>
+cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+

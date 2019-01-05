@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/kcy1019'
+let g:netrw_dirhist_2='/home/kcy1019/node_modules'
+let g:netrw_dirhist_3='/home/kcy1019/node_modules/.bin'
+let g:netrw_dirhist_4='/sogang/under/cse20181691/test'
+let g:netrw_dirhist_5='/sogang/under/cse20181691/hacking'
+let g:netrw_dirhist_6='/sogang/under/cse20181691/test2'
+let g:netrw_dirhist_7='/sogang/under/cse20181691/cp2'
+let g:netrw_dirhist_8='/sogang/under/cse20181691/test2'
+let g:netrw_dirhist_9='/sogang/under/cse20181691/test3'

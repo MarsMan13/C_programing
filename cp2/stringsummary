@@ -1,0 +1,10 @@
+strlen(string);
+    
+strcpy(A, B);   <-- A, B are string && A should be array!!!
+strncpy(A, B, size);     <-- =
+
+strcmp(A, B);   <-- return (A > B --> pos num, A < B --> neg num, A == B --> return 0)
+strncmp(A, B, size);
+
+strcat(A, B);   <-- A+B (int python), A should be array!!!
+strncat(A, B, size);    <-- = 

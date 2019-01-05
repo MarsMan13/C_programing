@@ -1,0 +1,11 @@
+set nu
+colorscheme slate 
+set mouse=a
+set tabstop=4
+set cindent
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set number
+set autoindent
+set smartindent
